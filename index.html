@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="LUMIÈRE PÂTISSERIE — ひとくちに、特別を。">
+<title>LUMIÈRE | PÂTISSERIE</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:0}
+body{margin:0;background:#241006;color:#f7ead8;font-family:"Yu Mincho","Hiragino Mincho ProN",serif}
+.site{position:relative;width:100%;max-width:1366px;margin:0 auto;line-height:0;isolation:isolate}
+.site img{display:block;width:100%;height:auto}
+.base{position:relative;z-index:0}
+.motion{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:1;pointer-events:none;opacity:1;display:block}
+
+.hotspot{position:absolute;z-index:3;display:block;line-height:1;color:transparent;text-indent:-9999px;overflow:hidden;border-radius:999px;outline-offset:3px}
+.hotspot:focus-visible{outline:3px solid #ffd27b}
+.hotspot:hover{background:transparent}
+/* 元画像と同じ 1366×3072 の座標系で配置。幅が変わっても画像と一緒に縮尺されます。 */
+.nav-recommend{left:4.7%;top:21.9%;width:19.4%;height:1.8%}
+.nav-store{left:29.2%;top:21.9%;width:19.4%;height:1.8%}
+.nav-philosophy{left:53.8%;top:21.9%;width:19.4%;height:1.8%}
+.nav-order{left:77.9%;top:21.9%;width:19.4%;height:1.8%}
+.cta-order{left:66.8%;top:71.7%;width:20.8%;height:2.4%}
+.cta-order-footer{left:75.0%;top:95.7%;width:20.2%;height:3.4%}
+.section-anchor{position:absolute;left:0;width:1px;height:1px;scroll-margin:0}
+#OUR-PHILOSOPHY{top:25.2%}
+#happyHallowe-en{top:50.3%}
+#storeinformation{top:75.7%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.motion{animation:none}}
+@media(min-width:1367px){.site{box-shadow:0 0 50px #0008}}
+</style>
+</head>
+<body>
+<main class="site" aria-label="LUMIÈRE パティスリー トップページ">
+<img class="base" src="top-page.png" alt="LUMIÈREのトップページ。ブランドビジュアル、OUR PHILOSOPHY、ハロウィーンケーキ、店舗情報。">
+<img class="motion" src="download.gif" alt="" aria-hidden="true">
+<span id="OUR-PHILOSOPHY" class="section-anchor" aria-hidden="true"></span>
+<span id="happyHallowe-en" class="section-anchor" aria-hidden="true"></span>
+<span id="storeinformation" class="section-anchor" aria-hidden="true"></span>
+<a class="hotspot nav-recommend" href="#happyHallowe-en" aria-label="今月のおすすめへ">今月のおすすめ</a>
+<a class="hotspot nav-store" href="#storeinformation" aria-label="店舗情報へ">店舗情報</a>
+<a class="hotspot nav-philosophy" href="#OUR-PHILOSOPHY" aria-label="こだわりへ">こだわり</a>
+<a class="hotspot nav-order" href="order.html" aria-label="注文方法ページへ">注文方法</a>
+<a class="hotspot cta-order" href="order.html" aria-label="中央のご購入はこちら">ご購入はこちら</a>
+<a class="hotspot cta-order-footer" href="order.html" aria-label="画面下部のご購入はこちら">ご購入はこちら</a>
+</main>
+</body>
+</html>
